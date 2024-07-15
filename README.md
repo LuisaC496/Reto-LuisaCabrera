@@ -23,6 +23,7 @@ function guardarEnLocalStorage() {
 }
 ~~~
 5. Creación de estilos con CSS.
+   
 Ejemplo de aplicación de estilos con CSS. 
 ~~~
 body {
