@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RETO 1</title>
+</head>
+
+<body>
+    <div id="formRegistro" class="formulario">
+        <h1>Agregar Citas</h1>
+        <form id="CitasForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" placeholder="Ingrese fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" placeholder="Ingrese hora" required>
+
+            <label for="sintomas">Síntomas:</label>
+            <textarea id="sintomas" placeholder="Describa sus síntomas" rows="4" required></textarea>
+
+            <button type="submit" id="guardar">Guardar</button>
+        </form>
+    </div>
+
+        <div id="contenidoCitas">
+            <h2>Agenda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Sintomas</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="listaCitas"></tbody>
+            </table>
+
+        </div>
+
+        <div id="BuscarCitas">
+            <label for="buscar">Buscar por nombre:</label>
+            <input type="text" id="buscar" placeholder="Ingrese nombre a buscar" required>
+            <div id="nombresBuscados">
+              <!-- Aqui se muestran los resusltados de la busqueda -->
+            </div>
+        </div>
+
+    
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
